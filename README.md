@@ -18,6 +18,7 @@ This mini-project is divided into four tasks. The first three tasks will get you
     * The name of the project.
 
     * The type of project (use a `<select>` drop-down).
+    https://getbootstrap.com/docs/5.3/forms/select/
 
     * The date the project is due (use the `date` input type).
 
