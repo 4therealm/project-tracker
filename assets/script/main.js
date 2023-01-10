@@ -23,9 +23,11 @@ const tableRows = Array.from(tableElement.children())
 $(formSubmit).on('click', $('button'), function(e) {
   e.preventDefault()
 console.log("fired")
-const _name = $(formNameInput).text
-const _type = $(formTypeSelect).val()
-const _date = $(datePicker).input
+const _name = $(this).parent().children("input").val()
+const _type = $(this).parent().children("select").val()
+const _date = $(this).parent().children("p").children().val()
+
+
 projectData = [
   {
     name:_name,
@@ -33,8 +35,8 @@ projectData = [
     due: _date
   }
 ]
-console.log($(this).parent().children("input").val())
-// document.localStorage.setItem((formNameInput.text, projectData))
+console.log(projectData)
+localStorage.setItem(_name, JSON.stringify(projectData));
   
 })
 
