@@ -53,41 +53,47 @@
 </button>
 
 <!-- Modal -->
-<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog model-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLabel">Project Information</h1>
       </div>
-      <div class="modal-body"> -->
+      <div class="modal-body">
         <div class=" container-fluid">
           <form>
-
-        <input type="text" class="form-control" id="floatingInput" placeholder="Project Name">
+            <label for="floatingInput">Project Name</label>
+        <input type="text" class="form-control" id="floatingInput" required>
+      
+              <!-- <div class="invalid-feedback">
+          Please enter a message in the textarea.
+        </div> -->
   
 
+        <label for="floatingSelect">Project Type</label>
+      <select class="form-select mb-3"  required aria-label="select example" id="floatingSelect">
 
-      <select class="form-select mb-5" id="floatingSelect" aria-label="Floating label select example">
-
-        <option selected>What type of project?</option>
+        <option selected></option>
         <option value="1">Javascript</option>
         <option value="2">CSS</option>
         <option value="3">HTML</option>
         <option value="4">jquery</option>
 
       </select>
-      <p>Project Due: <input class="dateInput" type="text" id="dateInput"></p>
+      <p>Project Due: <input class="dateInput" required aria-label="select example" type="text" id="dateInput"></p>
+
       <button type="submit" id="submitBtn" class="btn btn-primary">Submit</button>
     </form>
 
 
-        <!-- </div>
+        </div>
       </div>
       <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
