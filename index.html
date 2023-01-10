@@ -12,34 +12,34 @@
 <title>Project Tracker</title>
 </head>
 <body class="">
+
+
+
 <main class="container-fluid row">
-  
-
-
 
 <table class="table mt-5  offset-2 col">
   <thead>
     <tr>
-      <th scope="col">Due Date</th>
       <th scope="col">Project Name</th>
       <th scope="col">Project Type</th>
+      <th scope="col">Due Date</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1/25/2023</th>
       <td>Quiz</td>
       <td>Javascript</td>
+      <th scope="row">1/25/2023</th>
     </tr>
     <tr>
-      <th scope="row">1/50/2023</th>
       <td>Work Portfolio</td>
       <td>HTML CSS</td>
+      <th scope="row">1/50/2023</th>
     </tr>
     <tr>
-      <th scope="row">12/5/2023</th>
       <td>Larry the Bird</td>
       <td>Yo Face</td>
+      <th scope="row">12/5/2023</th>
     </tr>
   </tbody>
 </table>
@@ -49,7 +49,7 @@
 
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
+ Save 
 </button>
 
 <!-- Modal -->
@@ -58,24 +58,30 @@
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLabel">Project Information</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <div class=" container">
+        <div class=" container-fluid">
           <form>
             <div class="">
-              <input type="text" class="form-control" id="floatingInput" placeholder="Project Name">
-            </div>
-            <select class="form-select mb-5" id="floatingSelect" aria-label="Floating label select example">
-              <option selected>What type of project?</option>
-              <option value="1">Javascript</option>
-              <option value="2">CSS</option>
-              <option value="3">HTML</option>
-              <option value="4">jquery</option>
-            </select>
-            <p>Project Due: <input class="" type="text" id="datepicker"></p>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+
+        <input type="text" class="form-control" id="floatingInput" placeholder="Project Name">
+      </div>
+
+
+      <select class="form-select mb-5" id="floatingSelect" aria-label="Floating label select example">
+
+        <option selected>What type of project?</option>
+        <option value="1">Javascript</option>
+        <option value="2">CSS</option>
+        <option value="3">HTML</option>
+        <option value="4">jquery</option>
+
+      </select>
+      <p>Project Due: <input class="" type="text" id="datepicker"></p>
+      <button type="submit" id="submitBtn" class="btn btn-primary">Submit</button>
+    </form>
+
+
         </div>
       </div>
       <div class="modal-footer">
