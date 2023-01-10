@@ -8,6 +8,9 @@ const formSubmit = $('#submitBtn')
 //table
 const tableElement = $('table')
 
+let today = dayjs()
+console.log(today)
+
 let existingProjectData = JSON.parse(localStorage.getItem('existingProjectData'))
 if (existingProjectData ==null) existingProjectData = [];
 renderTable(existingProjectData)

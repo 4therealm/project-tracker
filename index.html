@@ -13,8 +13,9 @@
   </head>
   <body class="">
 <header class="row container-fluid">
-  <h1>Project Tracker</h1>
-  <p>welcome message</p>
+  <div class="col-4"><h1>Project Tracker</h1></div>
+  <div class="col-4"><p>welcome message</p></div>
+  <div class="col-4">date display</div>
 </header>
 
     <main class="container-fluid">
@@ -57,29 +58,18 @@
                 <label for="floatingInput">Project Name</label>
                 <input
                 type="text" class="form-control" id="floatingInput" required>
-
-                <!-- <div class="invalid-feedback">
-                          Please enter a message in the textarea.
-                        </div> -->
-
-
                 <label for="floatingSelect">Project Type</label>
                 <select class="form-select mb-3" required aria-label="select example" id="floatingSelect">
-
                   <option selected></option>
                   <option value="1">Javascript</option>
                   <option value="2">CSS</option>
                   <option value="3">HTML</option>
                   <option value="4">jquery</option>
-
                 </select>
                 <p>Project Due:
                   <input class="dateInput" required aria-label="select example" type="text" id="dateInput"></p>
-
                 <button type="submit" id="submitBtn" class="btn btn-primary">Submit</button>
               </form>
-
-
             </div>
           </div>
           <div class="modal-footer">
