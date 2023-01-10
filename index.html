@@ -14,23 +14,7 @@
 <body class="">
 <main class="container-fluid row">
   
-<div class="mt-5 container row col-4 ">
-  <form>
-    <div class="mb-3 col">
-      
-      <input type="text" class="form-control" id="floatingInput" placeholder="Project Name">
-    </div>
-    <select class="form-select mb-5 col" id="floatingSelect" aria-label="Floating label select example">
-      <option selected>What type of project?</option>
-      <option value="1">Javascript</option>
-      <option value="2">CSS</option>
-      <option value="3">HTML</option>
-      <option value="4">jquery</option>
-    </select>
-    <p>Project Due: <input class="col" type="text" id="datepicker"></p>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-</div>
+
 
 
 <table class="table mt-5  offset-2 col">
@@ -63,7 +47,42 @@
 </main>
 
 
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog model-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Project Information</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class=" container">
+          <form>
+            <div class="">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Project Name">
+            </div>
+            <select class="form-select mb-5" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>What type of project?</option>
+              <option value="1">Javascript</option>
+              <option value="2">CSS</option>
+              <option value="3">HTML</option>
+              <option value="4">jquery</option>
+            </select>
+            <p>Project Due: <input class="" type="text" id="datepicker"></p>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
@@ -71,6 +90,6 @@
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
 integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
 crossorigin="anonymous"></script>
-  <script src="/main.js"></script>
+  <script src="/assets/script/main.js"></script>
 </body>
 </html>
