@@ -18,8 +18,8 @@ renderTable(existingProjectData)
 //event listener-form submit
 $(formSubmit).on('click', $('button'), function(e) {
   e.preventDefault()
-
-  //targeting input values
+//take button out of the targeting=============================================================
+//targeting input values
   const _name = $(this).parent().children("input").val()
   const _type = $(this).parent().children("select").val()
   const _date = $(this).parent().children("p").children().val()
@@ -28,9 +28,10 @@ $(formSubmit).on('click', $('button'), function(e) {
   let newProjectData = {name:_name,type:_type,dueDate:_date}
 
 //saving object, as a string, to local storage
-  localStorage.setItem('newProjectData', JSON.stringify(newProjectData))
-      existingProjectData.push(newProjectData);
+
+  existingProjectData.push(newProjectData);
   localStorage.setItem('existingProjectData', JSON.stringify(existingProjectData))
+  renderTable(existingProjectData)
 })
 
 
