@@ -1,7 +1,7 @@
 $( function() {
   $( "#datepicker" ).datepicker();
 
-
+let projectData = [];
 //element targeting 
 //form
 const formNameInput = $('#floatingInput')
@@ -18,13 +18,25 @@ const tableRows = Array.from(tableElement.children())
 
 
 
-let projectData = [
+
+
+$(formSubmit).on('click', $('button'), function(e) {
+  e.preventDefault()
+console.log("fired")
+const _name = $(formNameInput).text
+const _type = $(formTypeSelect).val()
+const _date = $(datePicker).input
+projectData = [
   {
-    name:formNameInput,
-    type:formTypeSelect,
-    due: datePicker
+    name:_name,
+    type:_type,
+    due: _date
   }
 ]
+console.log($(this).parent().children("input").val())
+// document.localStorage.setItem((formNameInput.text, projectData))
+  
+})
 
 
 
