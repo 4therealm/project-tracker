@@ -31,26 +31,17 @@ $(formSubmit).on('click', $('button'), function(e) {
 })
 
 
-
-
-
-
-
-
-
-
-
 function renderTable(array) {
- console.log('fired')
+  console.log('fired')
 
-array.forEach(obj => {
-
-    var row =  $('<tr/>'); 
-    row.append($('<td/>').append(obj.name));
-    row.append($('<td/>').append(obj.type));
-    row.append($('<td/>').append(obj.dueDate).attr('scope', 'row'));
-    tableElement.find('tbody').append(row);
-    console.log(array)
+  array.forEach(obj => {
+      var row =  $('<tr/>'); 
+      row.append($('<td/>').append(obj.name));
+      row.append($('<td/>').append(obj.type));
+      row.append($('<td/>').append(obj.dueDate).attr('scope', 'row'));
+      tableElement.find('tbody').append(row);
+ 
+  console.log(array)
 })}
   
 
@@ -60,3 +51,6 @@ array.forEach(obj => {
 
 
 } );
+
+
+//https://stackoverflow.com/questions/19635077/adding-objects-to-array-in-localstorage
